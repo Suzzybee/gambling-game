@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 20%;
+      margin: 5em auto;
+      padding: 1em 5em 5em;
+      box-shadow: 0 0 2em 8px;
+      background-color: blueviolet;
+      border-radius: 3em;
+    }
+    input{
+      box-shadow: 0 0 31px 4px;
+      height: 4vh; 
+    }
+    button{
+      background-color: rgb(11, 12, 12);
+      color: aliceblue;
+      border: none;
+      padding: 10px;
+    }
+  </style>
+</head> 
+<body>
+<div>
+  <h1>Gambling Game😉</h1>
+  <input type="text" id="myNumber">
+  <button onclick="play()">play</button>
+  <h3 id="comp-result"></h3>
+  <h2 id="my-result"></h2>
+</div>
+</body>
+</html>
+<script>
+    function play() {
+      let computerNum = Math.floor(Math.random()*10)
+      let myNumber = document.getElementById('myNumber')
+      let compResult = document.getElementById('comp-result')
+      let myResult = document.getElementById('my-result')
+      compResult.innerHTML = `Computer picked: ${computerNum}`
+
+      computerNum == myNumber.value ? myResult.innerHTML = 'Tie 😜':
+      
+      computerNum < myNumber.value ? myResult.innerHTML = 'You won 🙌' : myResult.innerHTML = 'You lose 😢'
+    }
+
+</script>
