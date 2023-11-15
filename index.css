@@ -1,0 +1,66 @@
+div{
+  width: 20%;
+  margin: 5em auto;
+  padding: 1em 5em 5em;
+  box-shadow: 0 0 2em 8px;
+  background-color: blueviolet;
+  border-radius: 3em;
+}
+input{
+  box-shadow: 0 0 31px 4px;
+  height: 4vh; 
+}
+button{
+  background-color: rgb(11, 12, 12);
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+}
+@media (max-width: 1164px) {
+  div{
+    width: 30%;
+  padding: 2em;
+}
+  button{
+    margin-left: 2em;
+}
+  input{
+    width: 60%;
+  }
+}
+@media (max-width: 918px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+  div{
+    width: 40%;
+    padding: 2em;
+}
+  button{
+    margin-left: 2em;
+}
+  input{
+    width: 60%;
+  }
+}
+@media (max-width: 428px) {
+  div{
+    width: 80%;
+    padding: 2em;
+}
+}
+@media (max-width: 320px) {
+  div{
+    /* width: 30%; */
+  padding: 1em;
+}
+  button{
+    margin-left: 6em;
+    margin-top: 2em;
+}
+  input{
+    width: 75%;
+  }
+}
